@@ -1,201 +1,235 @@
+<div align="center">
+
 # Quantum Algorithms: Experimental Implementation & Fault Diagnosis of Quantum Logic Gates
 
-<p align="center">
+**A research project on quantum algorithms, real quantum hardware, and coherent gate error diagnosis using Qiskit and IBM Quantum**
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Qiskit](https://img.shields.io/badge/Qiskit-Latest-6929C4)
-![IBM Quantum](https://img.shields.io/badge/IBM%20Quantum-Real%20Hardware-1261FE)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+![IBM Quantum](https://img.shields.io/badge/IBM-Quantum-1261FE)
+![License](https://img.shields.io/badge/License-MIT-success)
 
-</p>
+</div>
 
 ---
 
-## 📌 Overview
+## About
 
-This repository contains the complete implementation of my **Science Academies' Summer Research Fellowship Programme (SRFP-2025)** internship, sponsored by the **Indian Academy of Sciences (IASc)** carried out at **Bose Institute, Kolkata**.
+Quantum computers promise computational advantages for problems that are difficult or impossible for classical machines. While many introductory projects focus solely on simulations, this work extends beyond theory by validating quantum algorithms on **real IBM Quantum processors** and investigating how hardware imperfections influence computational outcomes.
 
-The project bridges the gap between **quantum information theory** and **real-world quantum hardware** by implementing fundamental quantum algorithms using **Qiskit**, investigating the effects of **faulty quantum gates**, and validating them on real **IBM Quantum Computers**.
+This repository contains the complete implementation of my **Science Academies' Summer Research Fellowship Programme (SRFP-2025)** internship carried out at **Bose Institute, Kolkata**, under the supervision of **Prof. Somshubhro Bandyopadhyay**.
 
-This work includes both **mathematical derivations** and **experimental verification** on real quantum processors.
+The project combines theoretical analysis, mathematical derivations, numerical simulations, and experimental implementation to study both the capabilities and limitations of present-day quantum computers.
+
+---
+
+## Key Contributions
+
+✔ Implementation of the **Deutsch**, **Deutsch–Jozsa**, and **Bernstein–Vazirani** algorithms
+
+✔ Experimental execution on **IBM Brisbane** and **IBM Torino**
+
+✔ Comparative study between ideal simulators and real quantum hardware
+
+✔ Experimental verification of quantum gates and Bell-state entanglement
+
+✔ Stability analysis of IBM quantum processors
+
+✔ Development of a coherent phase-flip error model for the Hadamard gate
+
+✔ Mathematical derivation of a generalized faulty Hadamard operator
+
+✔ Fidelity analysis for quantifying algorithmic robustness
+
+---
+
+## Repository Structure
+
+```text
+.
+├── Algorithms/
+│   ├── Deutsch/
+│   ├── Deutsch-Jozsa/
+│   └── Bernstein-Vazirani/
+│
+├── Quantum_Gates/
+│   ├── NOT/
+│   ├── CNOT/
+│   └── Hadamard/
+│
+├── IBM_Hardware/
+│
+├── Fault_Analysis/
+│
+├── Figures/
+│
+├── Report/
+│
+└── README.md
+```
+
+---
+
+# Project Overview
+
+The project is organized into four major components.
+
+### 1. Foundations of Quantum Computing
+
+A brief theoretical introduction covering
+
+- Qubits and quantum registers
+- Qutrits and higher-dimensional quantum systems
+- Hilbert spaces
+- Quantum gates
+- Quantum circuits
+- Quantum superposition
+- Entanglement
+- Quantum parallelism
+- Quantum interference
+
+---
+
+### 2. Quantum Algorithm Implementation
+
+The following algorithms were implemented from first principles.
+
+| Algorithm | Simulator | IBM Hardware |
+|-----------|-----------|--------------|
+| Deutsch | ✅ | ✅ |
+| Deutsch–Jozsa | ✅ | ✅ |
+| Bernstein–Vazirani | ✅ | ✅ |
+
+Each implementation includes
+
+- Mathematical derivation
+- Circuit construction
+- Oracle implementation
+- Experimental validation
+- Performance analysis
+
+---
+
+### 3. Experimental Investigation
+
+This repository contains experimental implementations of
+
+- NOT gate
+- CNOT gate
+- Hadamard gate
+- Bell-state generation
+- Quantum entanglement
+- Quantum parallelism
+- Deutsch Algorithm
+- Deutsch–Jozsa Algorithm
+
+Both simulated and hardware-generated measurement statistics are included.
+
+---
+
+### 4. Fault Diagnosis of Quantum Gates
+
+One of the major objectives of this project was to investigate how coherent gate imperfections influence quantum algorithms.
+
+Instead of treating hardware noise as a black box, a controlled error model was introduced into the Hadamard gate and its effect on the Deutsch–Jozsa algorithm was analyzed both mathematically and experimentally.
+
+The work includes
+
+- Bloch sphere analysis
+- Error propagation
+- Unique output-state fingerprints
+- Heatmap visualization
+- Generalized phase-error model
+- Fidelity analysis
+
+---
+
+# Generalized Faulty Hadamard
+
+The generalized faulty Hadamard operator is defined as
+
+\[
+H(\theta)=
+\frac{1}{\sqrt2}
+\begin{bmatrix}
+1&1\\
+-e^{i\theta}&e^{i\theta}
+\end{bmatrix}
+\]
+
+where
+
+- **θ = 0** corresponds to the ideal Hadamard gate
+- **θ = π** represents the coherent phase-flip error model
+
+This parameterization provides a continuous transition between ideal and faulty quantum operations.
+
+---
+
+# Experimental Platforms
+
+The algorithms were executed on
+
+| Platform | Purpose |
+|-----------|---------|
+| Qiskit Aer Simulator | Ideal simulations |
+| IBM Brisbane | Real hardware validation |
+| IBM Torino | Stability comparison |
+
+---
+
+# Software Stack
+
+- Python
+- Qiskit
+- NumPy
+- Matplotlib
+- IBM Quantum Runtime
+- Jupyter Notebook
 
 ---
 
 # Highlights
 
-- Complete implementation of
-  - Deutsch Algorithm
-  - Deutsch–Jozsa Algorithm
-  - Bernstein–Vazirani Algorithm
-    
-- Experimental study of
-  - Quantum Gates
-  - Quantum Entanglement
-  - Quantum Parallelism
+- Mathematical derivations from first principles
 
-- Quantum simulator implementation using
-  - Aer Simulator
-  - Statevector Simulator
-    
-- Experimental verification on
-  - IBM Brisbane Quantum Computer
-  - IBM Torino Quantum Computer
+- Real quantum hardware implementation
 
-- Stability comparison between different IBM quantum processors
-- Novel analysis of coherent phase-flip errors in Hadamard gates
-- Mathematical derivation of generalized faulty Hadamard operator
-- Fidelity analysis of faulty quantum circuits
+- Hardware vs simulator comparison
+
+- Noise-aware analysis
+
+- Publication-quality plots
+
+- Experimental validation
+
+- Fault diagnosis framework
+
+- Fidelity-based performance evaluation
 
 ---
 
-# 📚 Project Contents
+# Sample Results
 
-```
-.
-│
-├── Quantum Gates
-│     ├── NOT
-│     ├── CNOT
-│     ├── Hadamard
-│
-├── Quantum Algorithms
-│     ├── Deutsch
-│     ├── Deutsch–Jozsa
-│     ├── Bernstein–Vazirani
-│
-├── IBM Hardware Experimental Implementation
-│
-├── Stability Analysis
-│
-├── Fault Diagnosis
-│
-├── Fidelity Analysis
+The repository demonstrates
+
+- Accurate implementation of fundamental quantum algorithms
+
+- High agreement between theoretical predictions and simulations
+
+- Successful execution on IBM Quantum processors
+
+- Effects of decoherence and gate imperfections
+
+- Experimental identification of faulty Hadamard gates
+
+- Comparative stability analysis across quantum devices
 
 ---
 
-# 🔬 Topics Covered
+# Future Research Directions
 
-## Quantum Computing Fundamentals
-
-- Qubits
-- Qudits
-- Qutrits
-- Hilbert Space
-- Quantum Registers
-- Quantum Gates
-- Quantum Circuits
-- Quantum Oracle
-- Superposition
-- Entanglement
-- Quantum Parallelism
-- Quantum Interference
-
----
-
-## Algorithms Implemented
-
-### Deutsch Algorithm
-
-✔ Mathematical derivation
-✔ Oracle implementation
-✔ Simulator execution
-✔ IBM Quantum execution
-
----
-
-### Deutsch–Jozsa Algorithm
-
-✔ General theory
-
-✔ Two-qubit implementation
-
-✔ Multiple oracle constructions
-
-✔ Real hardware implementation
-
-✔ Performance comparison
-
----
-
-### Bernstein–Vazirani Algorithm
-
-✔ Hidden string recovery
-
-✔ Oracle implementation
-
-✔ Mathematical proof
-
----
-
-# ⚛ Experimental Work
-
-The following experiments are included:
-
-- NOT Gate verification
-
-- CNOT Gate verification
-
-- Walsh–Hadamard transformation
-
-- Bell-state generation
-
-- Quantum entanglement visualization
-
-- Quantum parallelism demonstration
-
-- Deutsch Algorithm implementation on IBM hardware
-
-- Deutsch–Jozsa Algorithm implementation on IBM hardware
-
-- Stability comparison between IBM Brisbane and IBM Torino
-
----
-
-# 🧪 Fault Diagnosis of Hadamard Gates
-
-One of the major contributions of this work is the analysis of **coherent phase-flip errors** in the Hadamard gate.
-
-The repository investigates
-
-- Ideal Hadamard
-
-- Faulty Hadamard
-
-- Generalized Hadamard
-
-- Bloch sphere evolution
-
-- Output state fingerprints
-
-- Experimental verification
-
-- Fidelity calculations
-
----
-# 🖥 IBM Quantum Hardware Used
-
-- IBM Brisbane
-    - Eagle r3 Processor
-    - 127 Qubits
-
-- IBM Torino
-    - Heron r1 Processor
-    - 133 Qubits
-
----
-
-# 🚀 Getting Started
-
-Clone the repository
-
-```bash
-git clone https://github.com/rangan269-ju/Source-code-for-Summer-Project-on-Quantum-Algorithms.git
-```
-
-# 🎯 Future Work
-
-Possible extensions include the followings
+Potential extensions of this work include
 
 - Multi-qubit fault diagnosis
 
@@ -203,43 +237,41 @@ Possible extensions include the followings
 
 - Quantum error mitigation
 
-- Noise-aware oracle design
+- Noise-resilient oracle design
 
 - Quantum error correction
 
-- Fault diagnosis of multi-qubit gates
-
-- Hardware-aware quantum compiler optimization
+- Hardware-aware circuit optimization
 
 ---
 
-# 👨‍💻 Author
+# Citation
 
-**Rangan Chakrabarty**
+If you use this repository in your research or academic work, please cite it appropriately.
 
-Department of Physics
-Faculty of Science
-Jadavpur University, kolkata, India
-Science Academies'Summer Research Fellow (2025)
-Bose Institute, Kolkata
-
----
-
-# 🙏 Acknowledgements
-
-This work was carried out under the supervision of **Prof. Somshubhro Bandyopadhyay**
-Department of Physical Sciences
-Bose Institute
-
-Special thanks to the developers of
-- IBM Quantum
-- Qiskit
-- Python Scientific Community
-for making open quantum computing accessible to researchers worldwide.
+```bibtex
+@misc{chakrabarty2025quantum,
+  author = {Rangan Chakrabarty},
+  title = {Quantum Algorithms: Experimental Implementation and Fault Diagnosis of Quantum Logic Gates},
+  year = {2025},
+  institution = {Bose Institute},
+}
+```
 
 ---
 
-# ⭐ If you find this repository useful...
+# Acknowledgements
 
-Please consider giving it a **Star ⭐**.
-It motivates future research and development in open-source quantum computing.
+This work was completed during the **Science Academies' Summer Research Fellowship Programme (SRFP-2025)** at **Bose Institute, Kolkata** under the supervision of **Prof. Somshubhro Bandyopadhyay**.
+
+The project made extensive use of the open-source **Qiskit** ecosystem and IBM Quantum cloud resources, whose contributions to quantum computing education and research are gratefully acknowledged.
+
+---
+
+<div align="center">
+
+### If you found this project useful, consider giving it a ⭐
+
+It helps others discover the project and supports open research in quantum computing.
+
+</div>
