@@ -1,6 +1,6 @@
 <div align="center">
 
-# Quantum Algorithms: Experimental Implementation & Fault Diagnosis of Quantum Logic Gates
+# Quantum Algorithms: Detailed Study, Experimental Implementation & Fault Diagnosis of Quantum Logic Gates
 
 **A research project on quantum algorithms, real quantum hardware, and coherent gate error diagnosis using Qiskit and IBM Quantum**
 
@@ -252,7 +252,7 @@ If you use this repository in your research or academic work, please cite it app
 ```bibtex
 @misc{chakrabarty2025quantum,
   author = {Rangan Chakrabarty},
-  title = {Quantum Algorithms: Experimental Implementation and Fault Diagnosis of Quantum Logic Gates},
+  title = {Quantum Algorithms: Detailed Study, Experimental Implementation and Fault Diagnosis of Quantum Logic Gates},
   year = {2025},
   institution = {Bose Institute},
 }
@@ -272,6 +272,6 @@ The project made extensive use of the open-source **Qiskit** ecosystem and IBM Q
 
 ### If you found this project useful, consider giving it a ⭐
 
-It helps others discover the project and supports open research in quantum computing.
+It helps others discover the project and supports and motivates open research in quantum computing.
 
 </div>
