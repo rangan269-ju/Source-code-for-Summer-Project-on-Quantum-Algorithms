@@ -262,7 +262,7 @@ If you use this repository in your research or academic work, please cite it app
 
 # Acknowledgements
 
-This work was completed during the **Science Academies' Summer Research Fellowship Programme (SRFP-2025)** at **Bose Institute, Kolkata** under the supervision of **Prof. Somshubhro Bandyopadhyay**.
+This work was completed during the **Science Academies' Summer Research Fellowship Programme (SRFP-2025)** at **Bose Institute, Kolkata**.
 
 The project made extensive use of the open-source **Qiskit** ecosystem and IBM Quantum cloud resources, whose contributions to quantum computing education and research are gratefully acknowledged.
 
