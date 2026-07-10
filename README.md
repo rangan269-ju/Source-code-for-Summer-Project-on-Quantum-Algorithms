@@ -14,41 +14,37 @@
 
 ## 📌 Overview
 
-This repository contains the complete implementation of my **Science Academies' Summer Research Fellowship Programme (SRFP-2025)** internship carried out at **Bose Institute, Kolkata**, under the supervision of **Prof. Somshubhro Bandyopadhyay**.
+This repository contains the complete implementation of my **Science Academies' Summer Research Fellowship Programme (SRFP-2025)** internship, sponsored by the **Indian Academy of Sciences (IASc)** carried out at **Bose Institute, Kolkata**.
 
-The project bridges the gap between **quantum computing theory** and **real-world quantum hardware** by implementing fundamental quantum algorithms using **Qiskit**, validating them on **IBM Quantum Computers**, and investigating the effects of **faulty quantum gates**.
+The project bridges the gap between **quantum information theory** and **real-world quantum hardware** by implementing fundamental quantum algorithms using **Qiskit**, investigating the effects of **faulty quantum gates**, and validating them on real **IBM Quantum Computers**.
 
-Unlike conventional introductory quantum computing projects, this work includes both **mathematical derivations** and **experimental verification** on real quantum processors.
+This work includes both **mathematical derivations** and **experimental verification** on real quantum processors.
 
 ---
 
-# ✨ Highlights
+# Highlights
 
 - Complete implementation of
   - Deutsch Algorithm
   - Deutsch–Jozsa Algorithm
   - Bernstein–Vazirani Algorithm
-
-- Experimental verification on
-  - IBM Brisbane
-  - IBM Torino
-
-- Quantum simulator implementation using
-  - Aer Simulator
-  - Statevector Simulator
-
+    
 - Experimental study of
-
   - Quantum Gates
   - Quantum Entanglement
   - Quantum Parallelism
 
+- Quantum simulator implementation using
+  - Aer Simulator
+  - Statevector Simulator
+    
+- Experimental verification on
+  - IBM Brisbane Quantum Computer
+  - IBM Torino Quantum Computer
+
 - Stability comparison between different IBM quantum processors
-
 - Novel analysis of coherent phase-flip errors in Hadamard gates
-
 - Mathematical derivation of generalized faulty Hadamard operator
-
 - Fidelity analysis of faulty quantum circuits
 
 ---
@@ -68,20 +64,13 @@ Unlike conventional introductory quantum computing projects, this work includes 
 │     ├── Deutsch–Jozsa
 │     ├── Bernstein–Vazirani
 │
-├── IBM Hardware Experiments
+├── IBM Hardware Experimental Implementation
 │
 ├── Stability Analysis
 │
 ├── Fault Diagnosis
 │
 ├── Fidelity Analysis
-│
-├── Figures
-│
-├── Source Codes
-│
-└── Report.pdf
-```
 
 ---
 
@@ -109,11 +98,8 @@ Unlike conventional introductory quantum computing projects, this work includes 
 ### Deutsch Algorithm
 
 ✔ Mathematical derivation
-
 ✔ Oracle implementation
-
 ✔ Simulator execution
-
 ✔ IBM Quantum execution
 
 ---
@@ -158,9 +144,9 @@ The following experiments are included:
 
 - Quantum parallelism demonstration
 
-- Deutsch Algorithm on IBM hardware
+- Deutsch Algorithm implementation on IBM hardware
 
-- Deutsch–Jozsa Algorithm on IBM hardware
+- Deutsch–Jozsa Algorithm implementation on IBM hardware
 
 - Stability comparison between IBM Brisbane and IBM Torino
 
@@ -186,41 +172,7 @@ The repository investigates
 
 - Fidelity calculations
 
-The generalized faulty Hadamard operator is expressed as
-
-\[
-H(\theta)=
-\frac{1}{\sqrt2}
-\begin{bmatrix}
-1&1\\
--e^{i\theta}&e^{i\theta}
-\end{bmatrix}
-\]
-
-which smoothly interpolates between the ideal and faulty cases.
-
 ---
-
-# 📊 Features
-
-- Real quantum hardware execution
-
-- Noise-aware experimentation
-
-- Experimental vs theoretical comparison
-
-- Mathematical derivations
-
-- Publication-quality plots
-
-- Heatmaps
-
-- Bloch sphere visualizations
-
-- Fidelity plots
-
----
-
 # 🖥 IBM Quantum Hardware Used
 
 - IBM Brisbane
@@ -233,95 +185,17 @@ which smoothly interpolates between the ideal and faulty cases.
 
 ---
 
-# 🛠 Technologies Used
-
-- Python
-
-- Qiskit
-
-- NumPy
-
-- Matplotlib
-
-- IBM Quantum Runtime
-
-- Jupyter Notebook
-
----
-
 # 🚀 Getting Started
 
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Quantum-Algorithms-Fault-Diagnosis.git
+git clone https://github.com/rangan269-ju/Source-code-for-Summer-Project-on-Quantum-Algorithms.git
 ```
-
-Install dependencies
-
-```bash
-pip install qiskit
-pip install matplotlib
-pip install numpy
-```
-
-Run
-
-```bash
-python filename.py
-```
-
-or open the notebooks
-
-```bash
-jupyter notebook
-```
-
----
-
-# 📈 Results
-
-The repository demonstrates
-
-- Ideal simulation of quantum algorithms
-
-- Successful execution on IBM Quantum hardware
-
-- Experimental validation of quantum advantage
-
-- Comparison of simulator vs hardware
-
-- Stability analysis across quantum processors
-
-- Detection of faulty Hadamard gates using unique measurement signatures
-
-- Quantitative fidelity analysis
-
----
-
-# 📄 Report
-
-A detailed report describing
-
-- theoretical derivations,
-
-- circuit implementations,
-
-- experimental observations,
-
-- stability studies,
-
-- mathematical proofs,
-
-- and fault analysis
-
-is included in this repository.
-
----
 
 # 🎯 Future Work
 
-Possible extensions include
+Possible extensions include the followings
 
 - Multi-qubit fault diagnosis
 
@@ -344,33 +218,23 @@ Possible extensions include
 **Rangan Chakrabarty**
 
 Department of Physics
-
-Jadavpur University
-
-Science Academies' Summer Research Fellow (2025)
-
+Faculty of Science
+Jadavpur University, kolkata, India
+Science Academies'Summer Research Fellow (2025)
 Bose Institute, Kolkata
 
 ---
 
 # 🙏 Acknowledgements
 
-This work was carried out under the supervision of
-
-**Prof. Somshubhro Bandyopadhyay**
-
+This work was carried out under the supervision of **Prof. Somshubhro Bandyopadhyay**
 Department of Physical Sciences
-
 Bose Institute
 
 Special thanks to the developers of
-
 - IBM Quantum
-
 - Qiskit
-
 - Python Scientific Community
-
 for making open quantum computing accessible to researchers worldwide.
 
 ---
@@ -378,5 +242,4 @@ for making open quantum computing accessible to researchers worldwide.
 # ⭐ If you find this repository useful...
 
 Please consider giving it a **Star ⭐**.
-
 It motivates future research and development in open-source quantum computing.
